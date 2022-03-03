@@ -1,3 +1,5 @@
-body {
-    background-color: yellow;
-}
+@use "./base/reset";
+@use "./base/utilities";
+@use "./base/variables";
+@use "./layouts/main-layout";
+@use "./components/header";

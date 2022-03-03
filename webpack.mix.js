@@ -11,12 +11,13 @@ const mix = require("laravel-mix");
  |
  */
 
-mix.js("resources/js/app.js", "public/js")
-    .postCss("resources/css/app.css", "public/css", [
-        require("postcss-import"),
-        require("tailwindcss"),
-        require("autoprefixer"),
-    ])
-    .browserSync("localhost:8000")
-    .sass("resources/css/styles.scss", "public/css")
-    .disableNotifications();
+mix
+  .js("resources/js/app.js", "public/js")
+  .postCss("resources/css/app.css", "public/css", [
+    require("postcss-import"),
+    require("tailwindcss"),
+    require("autoprefixer"),
+  ])
+  .browserSync("localhost:8000")
+  .sass("resources/css/styles.scss", "public/css")
+  .disableNotifications();
